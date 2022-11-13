@@ -1,0 +1,100 @@
+@font-face {
+    font-family: leander;
+    src: url(Leander.ttf);
+}
+
+body {
+   background-image: url(../9-11_message_photo.jpeg);
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#navBar {
+   display: flex;
+    align-content: space-around;
+}
+
+#logo {
+}
+
+.myLinks {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    width: 100%;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #000;
+    font-family: leander;
+    font-size: 25pt;
+    flex-grow: 1;
+}
+#navBar a:hover {
+    color: grey;
+}
+
+.messageBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: leander;
+    width: 100%;
+    height: 600px;;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    font-size: 20pt;
+    color: #fff;
+    background-color: grey;
+    border-radius: 5px;
+    text-shadow: 1px 1px #000;
+}
+
+h3 {
+    text-indent: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #navBar a {
+        font-size: 20pt;
+        color: #000;
+    }
+}
+
+/*TABLET OPTIMIZATION*/
+@media only screen and (max-width: 1200px) {
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #navBar a {
+        font-size: 20pt;
+        color: #000;
+    }
+    
+    .paragraphs {
+        width: 500px;
+        font-size: 15pt;
+    }
+    
+}

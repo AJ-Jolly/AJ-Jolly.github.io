@@ -1,0 +1,116 @@
+@font-face {
+    font-family: leander;
+    src: url(Leander.ttf);
+}
+
+body {
+    background-image: url(../mcr_tour_symbol.jpg);
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #08080a;
+}
+
+#navBar {
+   display: flex;
+    align-content: space-around;
+}
+
+#logo{
+}
+
+.myLinks {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    width: 100%;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: leander;
+    font-size: 25pt;
+    flex-grow: 1;
+}
+
+#navBar a:hover {
+    color: grey;
+}
+
+.mediaHubContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videosButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 730px;
+    height: 470px;
+    margin-top: 25px;
+    opacity: 65%;
+}
+
+.thumbnail {
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+
+.mediaHeader {
+    font-family: leander;
+    color: #fff;
+    font-size: 30pt;
+    width: 100%;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.videosButton:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+/*MOBILE OPTIMIZATION*/
+@media only screen and (max-width: 600px) {
+     #navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #navBar a {
+        font-size: 20pt;
+    }
+    
+    body {
+        background-color: #08080a;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+}
+
+/*TABLET OPTIMIZATION*/
+@media only screen and (max-width: 1200px) {
+    
+    
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+

@@ -1,0 +1,736 @@
+@font-face {
+    font-family: leander;
+    src: url(Leander.ttf);
+}
+
+body {
+    background-image: url("../Offering_skeleton_v4.png");
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-attachment: fixed;
+}
+
+#navBar {
+   display: flex;
+    align-content: space-around;
+}
+
+#logo{
+}
+
+.myLinks {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    width: 100%;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: leander;
+    font-size: 25pt;
+    flex-grow: 1;
+}
+
+#navBar a:hover {
+    color: grey;
+}
+
+.tourContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    opacity: 75%;
+    margin: 0 auto;
+}
+
+.tourImage {
+    width: 30%;
+    height: auto; 
+}
+
+.tourHeadbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px; 
+    margin-top: 100px;
+    background-color: #333333;
+    color: #fff;
+    font-family: leander;
+    font-size: 25pt;
+    padding: 5px 20px;
+    
+}
+
+.tourNZ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+
+}
+
+.ticketButtonGrey {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20pt;
+}
+
+.ticketButtonGrey:hover {
+    background-color: #fff;
+    color: #333333;
+}
+
+.ticketButtonBlack {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20pt;
+}
+
+.ticketButtonBlack:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.tourBrisbane {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.soldOutButtonBlack {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20pt;
+}
+
+.tourMelborne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.soldOutButtonGrey {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20pt;
+}
+
+.tourSydney {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourAustell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourMiltonGrey {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourMiltonBlack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourIR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourIT {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourCR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourPetersburg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourMoscow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourKiev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourDE {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourPA {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourON {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourMA {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourNY {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourMI {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourMN {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourIL {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourNJ1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourNJ2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourFL {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourHouston {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourDallas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourCO {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourWA {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourOakland {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px; 
+}
+
+.tourNV {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourInglewood1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourInglewood2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourInglewood3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+.tourInglewood4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    height: 75px;
+    width: 1200px;
+    margin-top: 1px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+}
+
+
+/*MOBILE OPTIMIZATION*/
+@media only screen and (max-width: 600px) {
+     #navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #navBar a {
+        font-size: 20pt;
+    }
+    
+}
+
+/*TABLET OPTIMIZATION*/
+@media only screen and (max-width: 1200px) {
+    
+    
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+}

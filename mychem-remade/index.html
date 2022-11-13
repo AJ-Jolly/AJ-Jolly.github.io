@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | My Chemical Romance</title>
+    <link rel="stylesheet" href="css/MCR.css">
+    <script src="slides.js"></script>
+    <!--<script src="hamburger.js"></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body onload="currentSlide(1)">
+    <div id="navBar">
+        <div id="logo"> 
+             <a href="index.html"> <img src="mcrLogo.png" width="300px" height="220px"></a>
+        </div>
+        <div class="myLinks">
+            <a href="MCR_music.html">Music</a>
+            <a href="MCR_news.html">News</a>
+            <a href="MCR_tour.html">Tour</a>
+            <a href="https://mychemicalromance.warnerrecords.com/">Goods</a>
+            <a href="MCR_media.html">Media</a>
+        </div>
+            <!--hamburger menu-->
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+    </div><!--end navBar-->
+    
+    <div class="slideshowContainer">
+        <div class="bandSlides bs1">
+                <!--<img src="returnShow1.jpg" style= "width: 100%">-->
+            <div id="test-parent">
+
+                    <div class="text">Reunion Tour</div>
+                    <a href="MCR_tour.html"><button class="button">Get Tickets</button></a>
+            </div>
+        </div><!--end band slides 1-->
+        
+        <div class="bandSlides bs2">
+               <!-- <img src="aSummoning_resized.png" style= "width: 100%">-->
+                <div id="test-parent2">
+
+                 <div class="text2">Thank You for 20 Years!</div>
+                 <a href="9-11_statement.html"><button class="button">Read More</button></a>
+            </div>
+        </div><!--end band slides 2-->
+        
+        <div class="bandSlides bs3">
+               <!-- <img src="mcr_merch_v2.png" style="width: 100%">-->
+                        <div id="test-parent2">
+
+                 <div class="text3"><center>Danger Days <br> and <br> Black Parade XV <br> Collections</center></div>
+                    <a href="https://mychemicalromance.warnerrecords.com/"><button class="button">Shop Merch</button></a>
+            </div>
+        </div><!--end band slides 3-->
+        
+        <!--Next and previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div><!--end slideshow container-->
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <div class="listWrapper">
+        <div class="imgBox1">
+            <img class="hangingMan" src="hanging_man_logo.png">
+            <img class="coffin" src="coffin_filled.png">
+        </div>
+        
+        <div class="joinBox">
+            <div class="emailTitle">GET ON THE LIST!</div>
+            <div class="emailSubhead">Get updates from My Chemical Romance</div>
+            <form>
+                <input type="text" id="email" placeholder="Email Address"><br>
+                <button type="join">JOIN</button>
+            </form>
+            <div class="symbols">
+                <img class="candle" src="candleSymbol.png">
+                <img class="drop" src="dropSymbol.png">
+                <img class="hand" src="handSymbol.png">
+                <img class="sun" src="sunSymbol.png">
+            </div>
+        </div><!--end join box-->
+        <div class="imgBox2">
+            <img class="pepe" src="pepe_white.png">
+            <img class="spider" src="spider_white.png">
+        </div>
+    </div><!--end list wrapper-->
+
+</body>
+</html>
