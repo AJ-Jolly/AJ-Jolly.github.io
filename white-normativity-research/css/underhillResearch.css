@@ -1,0 +1,493 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    background-color: #000;
+}
+
+/*NAV BAR*/
+#navBar {
+    display: flex;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    border-radius: 5px;
+    
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20pt;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navBar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*BEGINNING SECTION*/
+#beginning {
+    background-image: url(../images/protest_header_shaded.png);/*Britannica*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 850px;
+    margin-left: 0px;
+    background-attachment: fixed;
+}
+
+.interior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+/*info sections*/
+.section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 2000px;
+    background-image: url(../images/cincinnatiProtest.png);/*WVXU*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 1500px;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 2000px;
+    background-image: url(../images/UnderhillandSimms.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.info2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: #f0e584;
+}
+
+/*images*/
+.pageGraphic { 
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pageGraphic2 { 
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pageGraphic3 { 
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pageGraphic:hover {opacity: 0.7}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+ Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*MAP STUFF*/
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#map-container2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 0;
+}
+
+#map2 { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 0;
+}
+
+#title{
+    width: 300px;
+    height: 200px;
+    background-color: #f0e584;
+    border: 1px solid black;
+    border-radius: 7px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    z-index: 2;
+    font-size: 30pt;
+    line-height: 35pt;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 3px 3px 2px #000;
+}
+
+#key{
+    width: 300px;
+    height: 400px;
+    background-color: #f0e584;
+    border: 1px solid black;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    z-index: 2;
+    font-size: 30pt;
+    line-height: 35pt;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 3px 3px 2px #000;
+}
+
+#linkButton { /*link to map source*/
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25pt;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px 2px #000;
+    transition: 0.3s;
+}
+
+#linkButton:hover {
+   background: transparent;
+    color: #fff;
+}
+
+/*TEXT*/
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60pt;
+}
+
+.h1Alt {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60pt;
+    color: #f0e584;
+    text-shadow: 3px 3px 3px#000;
+    text-align: center;
+}
+
+.h3Alt {
+    font-size: 30pt;
+    color: #f0e584;
+    text-shadow: 3px 3px 3px#000;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;  
+}
+
+p {
+    color: #f0e584;
+    text-align: center;
+    width: 600px;
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.pBlack {
+    color: #000;
+    text-align: center;
+    width: 600px;
+    font-size: 18pt; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.pWide {
+    color: #f0e584;
+    text-align: center;
+    width: 1000px;
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 600px) {
+    #navBar a {
+        font-size: 12pt;
+    }
+    
+    .section {
+        height: 700px;
+    }
+    
+    .info { 
+        flex-direction: column;
+        height: 600px; 
+    }
+    
+    .info2 {
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+    
+    .pageGraphic2 {
+        height: 40%;
+    }
+    
+    p {
+        font-size: 14pt;
+        width: 85%;
+    }
+    
+    #title {
+        font-size: 13pt;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #key {
+        width: 200px;
+        height: 300px;
+        font-size: 15pt;
+    }
+    
+    #linkButton {
+        font-size: 15pt;
+    }
+    
+    .h1Alt {
+        font-size: 55pt;
+    }
+    
+    .pageGraphic {
+        height: 40%;
+    }
+    
+    .pageGraphic:hover {
+        opacity: 100%;
+    }
+    
+    .pageGraphic3 {
+        height: 12%;
+    }
+    
+    #section2 {
+        justify-content: space-around;
+        height: 1600px;
+    }
+    
+    .pWide {
+        width: 400px;
+        font-size: 14pt;
+    }
+    
+    .h3Alt {
+        font-size: 20pt;
+    }
+    
+    #footer {
+        height: 300px;
+        font-size: 10pt;
+    }
+}
+
+
+/*TABLET VERSION*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    #navbar a { /*???*/
+        font-size: 15pt;
+    }
+    
+    p {
+        width: 85%;
+    }
+    
+    .pWide {
+        width: 85%;
+    }
+    
+    h4 {
+        font-size: 10pt;
+    }
+    .section {
+        height: 1000px;
+    }
+    
+    #section2 {
+        justify-content: space-around;
+        height: 2500px;
+    }
+    
+    .section4 {
+        justify-content: space-around;
+        height: 2500px;
+    }
+    
+    .info {
+        flex-direction: column;
+    }
+    
+    .info2 {
+        flex-direction: column-reverse;
+    }
+    
+    .pageGraphic2 {
+        height: 70%;
+    }
+    
+    .pageGraphic3 {
+        height: 20%;
+    }
+    
+    #key {
+        width: 200px;
+        height: 300px;
+        font-size: 20pt;
+    }
+    
+    #linkButton {
+        font-size: 20pt;
+    }
+    
+}

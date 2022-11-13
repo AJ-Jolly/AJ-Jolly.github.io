@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><!--scaling for responsive design-->
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+<link rel="stylesheet" href="css/underhillResearch.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+<div id="beginning">
+    <div id="navBar">
+        <div id="navLinks">
+            <a href="#map2">Police Shooting Map</a>
+            <a href="#section2">Methodology</a>
+            <a href="#section3">Findings</a>
+            <a href="#map">2020 Protest Map</a>
+            
+        </div>
+    </div><!--end navBar-->
+    
+    <div class="interior">
+        <center><h1 class="h1Alt">White Normativity</h1></center>
+        <center><h3 class="h3Alt">Making sense of white parents' reactions to anti-racism protests and why it matters</h3></center>
+    </div><!--end interior-->
+</div><!--end beginning container--> 
+    
+<div class="section">
+    <div class="info">
+        <img class="pageGraphic2" src="images/michaelbrown_death.jpg" height="60%"><!--CNN-->
+    
+        <p>Michael Brown, an unamrmed black teenager, was fatally shot on August 9, 2014 but an unarmed white police officer named Darren Wilson in Ferguson, Missouri. The protest that occured in the weeks to come captured global attention and made Black Lives Matter a household name. But they were far from the first of their kind, as the shooting was indicative of a large-scale, systemic trend of police bias and brutality against people of color.</p>
+    </div>
+</div><!--end information section--> 
+    
+<div id="map-container2">
+    <div id="map2">
+        <div id="title">Fatal Police Shootings in the US since 2015</div>
+        
+        <div id="key">
+            <img class="pageGraphic2" src="images/key.png" height="80%">
+            <a href="https://www.washingtonpost.com/graphics/investigations/police-shootings-database/"><button id="linkButton">View Source</button></a>
+        </div>
+    </div>    
+</div>
+    
+<div id="section2">
+    <h1 class="h1Alt">Methodology</h1>
+    
+    <div class="info2">
+        <p>This wave of protests also revealed the deep divide in the perspectives of white and black Americans. A survey conducted by the Pew Research Center in 2014 revealed that 80% of black respondants believed Brown's death "raised important questions about race", compared to only 37% of whites. But while much is known about the racial perspectives of white adults, far less is known of the views of white children. In 2014-15, Dr. Megan Underhill interviewed 40 white parents in Cinncinati, OH to gather data on how white parents speak to thier children about racial tension and protests when events such as Brown's death are at the forefront of American news.</p>
+    
+        <img class="pageGraphic2" src="images/ferguson_protest_line.png" height="65%">
+        <!--NPR-->
+    </div>
+    
+    <div class="info">
+        <img class="pageGraphic" onclick="popup()" src="images/cincinnati_dotmap.png" height="75%">
+        
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span onclick="closePopup()" class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <p>The chosen location is significant for having one of the deepest racial divides in the US. Although the black and white populations are nearly half and half (45% and 49% respectively), Cinncinati was the twelfth most segregated city at the time. Given this reputation, Dr. Underhill presented her study as “The Cincinnati Parenthood Project” and studying how parents convey their own social backgrounds and people of different social backgrounds to their children. The study notes that most parents found it "interesting" or "novel" when the topic of race came up, but some were caught off guard or even uncomfortable. Although all self-identified as middle class, the median household income of the participants was $100,000. Michael Brown's death occured a month into the project, resulting in data that only partially reflects attitudes about this event.</p>
+    </div>
+</div><!--end information section-->
+    
+<div id="section3">
+    <h1 class="h1Alt">Virtuous in Naiveté</h1>
+    
+    <img class="pageGraphic3" src="images/pieChart1_protestSpeak.jpg" height="30%">
+    
+    <p class="pWide">Of the surveyed parents, 28 said they had not conversed with their children about racial tensions or protests in Cincinnati (2001 killing of Timothy Thomas) or in Ferguson. Half believed their children were too young to discuss the topic, and the other half said their children "never asked." Of the parents who did discuss these events, most used a colorblind perspective that largely ignored race. When questioned further, another major factor was revealed: not knowing what to say due to their white worldview.</p>
+    
+    <div class="section">
+        <div class="info">
+            <img class="pageGraphic2" src="images/pieChart2_raceYesNo.jpg" height="60%">
+            
+            <p>These results are interesting, since the vast majority of participants reported speaking to their children about race at some point. Most of these discussions seemed to use some form of "we are all the same but different" as well as a "happy diversity" rhetoric that avoids difficult discussions of the very real racial tensions that still exist today. Some parents even reported saying that there are no tensions between whites and people of color or that the black community should "let go of their anger."</p>
+        </div>
+    </div>
+</div><!--end information section-->
+    
+<div class="section4">
+    <h1 class="h1Alt">The "Awokening" of White Parents</h1>
+    
+    <div class="info2">
+        <p>In the years that followed, more killings of unarmed black people made national headlines. Freddie Gray, Walter Scott, Sandra Bland, Alton Sterling, and Philando Castile were just a few of these victims, and Dr. Underhill wondered if conversations about race were starting to filter donw into white, liberal households. In 2019, she interviewed 50 parents in Asehville, NC, which is know as a major liberal outlier in the conservative south.</p>
+        
+        <img class="pageGraphic2" src="images/protestTeargass.jpg" height="70%">
+        <!--New York Times-->
+    </div>
+    
+    <div class="info">
+        <img class="pageGraphic2" src="images/medicStationSign.webp" height="60%">
+        <!--Citizen Times-->
+        
+        <p>Of the participants, 94% reported that Black Lives Matter activism showed them the realities of racial inequality, thus changing how they spoke to their children about race. They also described how they were inspired to embark on journies of re-education, including enrollment in racial equity training and "borderline religiously" consuming books, podcasts, and other media on racism an white supremacy. This education helped them speak to their children in their early childhood about racism in a way that centers white privilege and rejects the "protected childhood" model of discussion.</p>
+    </div>
+    
+    <h3 class="h3Alt">Though this may represent a vocal minority, it rejects the notion that protest and activism do nothing to create real change.</h3>
+</div><!--end information section-->
+    
+<div id="map-container">
+    <div id="map">
+        <div id="title">Black Lives Matter Protests from May 25, 2020 though November 15, 2020</div>
+            <div id="key">Circle size respents number of protests in a location<br><br>  <a href="https://www.creosotemaps.com/blm2020/index.html"><button id="linkButton">View Source</button></a></div>
+    </div>
+</div>
+    
+<div class="section">
+    <div class="info2">
+        <p>Though there are still many great steps to be taken, BLM activism continues to compell the nation to confront the realities of racism. But for many whites, racial inequality is simply an unpleasant subject that is either best left alone or misunderstood by those it is designed to benefit. While some parents understand this, others maintain a guilt-free conscience, perhaps without realizing how this only furthers the issue. We can see, however, the importance of activism education in those who have learned to adopt a race-conscious dialogue.</p>
+    
+        <img class="pageGraphic2" src="images/george-floyd-protests-.webp" height="65%">
+    </div>
+</div><!--end information section-->
+    
+<div id="footer">
+    <h4><i>References</i><br> 
+    Underhill, Megan R. 2017. "Parenting during Ferguson: making sense of white
+    parents’ silence." <i>Ethnic and Racial Studies.</i>
+    <br>
+    <br>
+    Underhill, Megan R. and Simms, Laura. 2022. "Parents of the White Awokening."
+    </h4>
+    
+    <h4><i>Photo Sources (order of appearance)</i><br>Britannica<br>CNN<br>WVXU<br>NPR<br>University of Virginia<br>Kelly L, Pexels<br>New York Times<br>Asheville Citizen Times<br>Fortune
+    </h4>
+</div>
+    
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("pageGraphic");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function popup(){
+  modal.style.display = "block";
+  modalImg.src = 'images/cincinnati_dotmap.png';
+  captionText.innerHTML = 'Cincinnati on a racial dot map, where each dot is a person. Blue for white, green for black, red for Asian, orange for hispanic, and brown for other races. Source: University of Virginia';
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+function closePopup() {
+  modal.style.display = "none";
+    console.log('closePopuprunning');
+}
+</script>
+    
+<script src="js/main.js"></script>
+<script src="js/shootingmap.js"></script>
+</body>
+</html>
