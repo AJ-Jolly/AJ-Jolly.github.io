@@ -1,0 +1,278 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#navBar a {
+    text-decoration: none;
+    font-size: 24pt;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    background-color: #000;
+    width: 20%;
+    padding-left: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#navBar a:hover {
+    color: #919294;
+}
+
+img {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 90%;
+}
+
+.rocket {
+    background-image: url(../rocket-launch-693192_1920%20copy.jpg);/*photoshopped SpaceX rocket*/
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-left: 0px;
+}
+
+.gauntlet {
+    background-image: url(../TimeGauntlet.jpeg);/*Model by @ENOMIC on Sketchfab*/
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-left: 0px;
+}
+
+.campus {
+    background-image: url(../Dahlia_campus.jpg);/*Photoshopped Iron Man screenshot*/
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-left: 0px; 
+}
+
+.employment {
+    background-image: url(../lab_coats.png);
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-left: 0px;
+}
+
+.accident {
+    background-image: url(../fire.jpg);/*ABC 13 Houston*/
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-left: 0px;
+}
+
+
+.inner-left-bottom{
+    width: 50%;
+    height: 350px;
+    padding-top: 200px;
+    padding-left: 200px;
+}
+
+.inner-left-bottom2{
+    width: 50%;
+    height: 350px;
+    padding-top: 400px;
+    padding-left: 200px;
+}
+
+.launchHead {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Teko', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 250px;
+    left: 210px;
+}
+
+.mission {
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    font-size: 40pt;
+    color: #fff;
+    margin: auto;
+    margin-top: 285px;
+    left: 5px;
+}
+
+.Head2 {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Teko', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 80px;
+    left: 210px;
+}
+
+.time {
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    font-size: 40pt;
+    color: #fff;
+    margin: auto;
+    margin-top: 110px;
+    left: 5px;
+}
+
+.location {
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    font-size: 40pt;
+    color: #fff;
+    margin: auto;
+    margin-top: 200px;
+    left: 5px; 
+}
+
+button {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 32px;
+    border: none;
+   text-align: center;
+    display: inline-block;
+    font-size: 16pt;
+    font-family: 'Teko', sans-serif;
+    font-weight: 100;
+    margin-left: 7px;
+}
+
+button2 {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 32px;
+    border: none;
+   text-align: center;
+    display: inline-block;
+    font-size: 16pt;
+    font-family: 'Teko', sans-serif;
+    font-weight: 100;
+    margin-left: 7px;
+}
+
+button3 {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 32px;
+    border: none;
+   text-align: center;
+    display: inline-block;
+    font-size: 16pt;
+    font-family: 'Teko', sans-serif;
+    font-weight: 100;
+    margin-left: 7px;
+}
+
+
+button:hover {
+    opacity: 78%;
+}
+
+button2:hover {
+    opacity: 78%;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#footer a {
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    background-color: #000;
+    width: 10%;
+    padding-left: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#footer a:hover {
+    color: #919294;
+}
+
+@media only screen and (max-width: 768px){
+#navBar a {
+    width: 100%;
+    font-size: 12pt;
+    color: white;
+    }
+    
+#footer a {
+    width: 100%;
+    font-size: 10pt;
+    color: white;
+    }
+    
+    .launchHead {
+        font-size: 14pt;
+    }
+    
+    .mission {
+        font-size: 24pt;
+    }
+    
+    button {
+        margin-left: 5px;
+    }
+    
+    img {
+        margin-right: 85px;
+    }
+    
+    .Head2 {
+        font-size: 14pt;
+    }
+    
+    .time {
+        font-size: 24pt;
+    }
+    
+    button2 {
+        margin-left: 5px;
+    }
+    
+    .location {
+        font-size: 24pt;
+    }
+    
+    .employment {
+        font-size: 24pt;
+    }
+    
+    .accident {
+        font-size: 24pt;
+    }
+}
+
+
+
+
+
+
+
