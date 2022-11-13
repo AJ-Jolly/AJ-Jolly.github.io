@@ -1,0 +1,342 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    background-color: #000;
+}
+
+.parallax {
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  margin-top: 50px; /* Add a top margin to avoid content overlaying the nav */
+}
+
+/*section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}*/
+
+/*.no-parallax {
+  background-color: #003539;
+  z-index: 999;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/skyline.jpg");
+  background-size: cover;
+}*/
+
+#navBar {
+    display: flex;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    border-radius: 5px;
+    
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto Flex', sans-serif;
+    text-align: center;
+    font-size: 20pt;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navBar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#beginning {
+    background-image: url(../images/ashevillePride.png);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    margin-left: 0px;
+    background-attachment: fixed;
+}
+
+.interior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+#downtown {
+    background-image: url(../images/Downtown_landscape.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1800px;
+    margin-left: 0px;
+    background-attachment: fixed;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+}
+
+#west {
+    background-image: url(../images/westAvl_mural.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1800px;
+    margin-left: 0px;
+    background-attachment: fixed;
+}
+
+#east {
+    background-image: url(../images/hiWire.jpg);/*PLACEHOLDER IMAGE*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1800px;
+    margin-left: 0px;
+    background-attachment: fixed;
+}
+
+.h1Alt {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 60pt;
+    color: #fff;
+    text-shadow: 3px 3px 3px#000;
+}
+
+.h2Alt {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 35pt;
+    color: #fff;
+}
+
+.pAlt {
+    font-family: 'Roboto Flex', sans-serif;
+    color: #fff;
+    font-size: 20pt;
+}
+
+.infoPannel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.infoPannel2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-color: rgba(191, 114, 205, 0.6);
+}
+
+.infoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 600px;
+    text-align: center;
+}
+
+.infoText-shadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 550px;
+    text-align: center;
+    text-shadow: 3px 3px 3px#000;
+}
+
+.mapImg {
+    width: 35%;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+/*Styling for Map Divs*/
+#map-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.map-container-small {
+    position: relative;
+    width: 40%;
+    height: 60vh;
+    margin: 0 auto;
+}
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 0;
+}
+
+#mapDowntown {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    box-shadow: 5px 5px 5px #000;
+}
+
+#mapWest {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    box-shadow: 5px 5px 5px #000;
+}
+
+#mapEast {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    box-shadow: 5px 5px 5px #000;
+}
+/*Styling for Marker Icons*/
+.marker{
+    background-image: url('../icons/map-pin.svg');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer; 
+    color: #bf72cd;
+}
+/*Styling for Pop ups*/
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #7280CD;
+    border-radius: 5px;
+}
+.mapboxgl-popup-content h2 {
+    color: #000;
+}
+.mapboxgl-popup-content p {
+    color: #000;
+}
+
+/*OVERLAY Divs*/
+#title{
+    width: 300px;
+    height: 150px;
+    background-color: #bf72cd;
+    border: 1px solid black;
+    border-radius: 7px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 2;
+    font-size: 40pt;
+    line-height: 35pt;
+    text-align: center;
+    font-family: 'Roboto Flex', sans-serif;
+    box-shadow: 3px 3px 2px #000;
+}
+#key{
+    width: 300px;
+    height: 300px;
+    background-color: #bf72cd;
+    border: 1px solid black;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    z-index: 2;
+    font-size: 30pt;
+    line-height: 35pt;
+    text-align: center;
+    font-family: 'Roboto Flex', sans-serif;
+    box-shadow: 3px 3px 2px #000;
+}
+
+#linkButton {
+    padding: 5px 10px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 25pt;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px 2px #000;
+    transition: 0.3s;
+}
+
+#linkButton:hover {
+   background: transparent;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mapboxgl-ctrl, mapboxgl-ctrl-group {
+    background-color: #bf72cd;
+}
+
+
+
+
+
+

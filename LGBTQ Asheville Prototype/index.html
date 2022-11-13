@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--comments-->
+<meta charset="utf-8">
+<title>Custom Mapbox Tileset in a Webpage</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><!--scaling for responsive design-->
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="beginning">
+    <div id="navBar">
+        <div id="navLinks">
+            <a href="#map">Full Map</a>
+            <a href="#mapDowntown">Downtown</a>
+            <a href="#mapWest">West Asheville</a>
+            <a href="#mapEast">South Slope</a>
+        </div>
+    </div><!--end navBar-->
+    
+    <div class="interior">
+        <h1 class="h1Alt">LGBTQ+ Spaces in Asheville</h1>
+    </div><!--end interior-->
+</div><!--end beginning container-->  
+    
+<div class="infoPannel">
+    <img class="mapImg" src="images/flag_on_downtown.jpg">
+    <div class="infoText">
+        <h2 class="h2Alt">One of the Gayest Cities in the US</h2>
+        <p class="pAlt">It's estimated that Western North Carolina is home to about 35,000 people who identify as LGBTQ+, about 6,000 of whom are trangender or nonbinary. In a state where being LGBTQ means daily uncertainty, Asheville is reguarded as one of the most queer cities in the south and as a haven for many, especially those who are rejected by their loved ones. This will be a growing project, compiling and mapping locations that are considered safe spaces, resources, or a parts of the local LGBTQ culture.  </p>
+    </div>
+</div>
+    
+    <!--where our mapbox map is going to load-->
+<div id="map-container">  
+    <div id="map">
+        <div id="title">LGBTQ+ Resources in Asheville</div>
+        <div id="key">Some data gathered from archived audio/video interviews
+            <br>
+            <br>
+            <a href="https://specialcollections.unca.edu/collections/oral-histories/296-2/549-2/"><button id="linkButton">Listen Here</button></a>
+        </div>
+    </div>
+</div><!--end map-container-->
+    
+<div id="downtown">
+    <div class="title">
+        <h1 class="h1Alt">Downtown Asheville</h1>
+        <img class="mapImg" src="images/gaydowntown.png">
+    </div>
+    
+    <div class="infoPannel2">
+        <div class="map-container-small">
+            <div id="mapDowntown"></div>
+        </div><!--end map container-->
+        
+        <div class="infoText-shadow">
+        <h2 class="h2Alt">Essential History and Community</h2>
+        <p class="pAlt">It's not just the essential nightlife with a long history in the WNC queer community. It's also the plethora of queer-owned and queer friendly local buisnesses that keep it thriving. Additionally, it's the site of the annual Blue Ridge Pride festival, one of the most prominent pride events in the south.</p>
+        </div>
+    </div><!--end info pannel-->
+</div><!--end downtown section-->
+    
+<div id="west">
+    <div class="title">
+        <h1 class="h1Alt">West Asheville</h1>
+        <img class="mapImg" src="images/odditorium.png">
+    </div>
+    
+    <div class="infoPannel2">
+        <div class="infoText-shadow">
+        <h2 class="h2Alt">Where the Weirdness Gathers</h2>
+        <p class="pAlt">This is where the queer, art, metal, and punk scenes come together. It's probably where much of the city's tongue-in-cheek "weird" reputation comes from, and it's constantly growing. </p>
+        </div>
+        
+        <div class="map-container-small">
+            <div id="mapWest"></div>
+        </div><!--end map container-->
+        
+    </div><!--end info pannel-->
+</div><!--end west avl section-->
+    
+<div id="east">
+    <div class="title">
+        <h1 class="h1Alt">South Slope</h1>
+        <img class="mapImg" src="images/south-slope-asheville.jpg">
+    </div>
+    
+    <div class="infoPannel2">
+        <div class="map-container-small">
+            <div id="mapEast"></div>
+        </div><!--end map container-->
+        
+        <div class="infoText-shadow">
+        <h2 class="h2Alt">Overtaken by the Community</h2>
+        <p class="pAlt">This region located south of downtown has been undergoing a major transition from an abondaned industrial district to a vibrant, artsy, community of local buisnesses. It's also home to many resources that have proven essential to the local WNC LGBTQ community, including the Western North Carolina AIDS Project and the WNC Community Health Services.</p>
+        </div>
+    </div>
+</div>
+    
+<script src="js/main2.js"></script> 
+<script src="js/main3.js"></script>
+<script src="js/main4.js"></script>
+<script src="js/main5.js"></script>
+</body>
+</html>
