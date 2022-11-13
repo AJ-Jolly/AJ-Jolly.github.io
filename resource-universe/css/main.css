@@ -1,0 +1,243 @@
+body{
+    background-color: #260524 !important; 
+
+}
+
+@font-face {
+    font-family: "alien";
+    src: url("../alien.otf"),
+         url("../alien.woff") format( 'woff'),
+         url( "../alien.eot" ) format( 'embedded-opentype' ),
+         url("../alien.ttf") format( 'truetype' ),
+         url( "../alien.svg" ) format( 'svg' );
+}
+
+@font-face {
+    font-family: "electro";
+    src: url("../ElectromagneticLungs.otf");
+}
+
+h1 {
+    font-family: shimano-narrow-round, sans-serif;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 80rem;
+    color: white;
+    text-shadow: -2px -2px 1px #e54e45; 
+}
+
+h1:hover {
+    color: white;
+    text-shadow: -6px -6px 1px #DB003F, -12px -12px 1px #F236E5, -18px -18px 1px #FDE767;
+    transition: 0.3s;
+}
+
+h2 {
+   font-family: shimano-narrow-round, sans-serif;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 20rem;
+    color: white;
+    text-shadow: -2px -2px 1px #e54e45;
+}
+
+p{
+   font-family: electro; 
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    text-shadow: -2px -2px 1px #e54e45;
+}
+
+a{
+   text-decoration: none !important;
+   color: white !important;
+    text-decoration-color: transparent !important;
+}
+
+a:hover{
+    color: #FDB046 !important;
+}
+
+ul{
+  font-family: electro; 
+    color: white;  
+    font-size: 1.5rem;
+    list-style-image: url('../images/planet.png');
+    margin-left: 2.5rem;
+}
+
+li{
+    padding: .8rem;
+}
+
+li:hover{
+    color: #FDB046 !important;
+}
+
+.hide {
+  display: none;
+  font-size: 1.1rem;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: white;
+}
+
+
+img{
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+}
+
+.row{
+    width:  100%;
+    position: absolute;
+    top: 40rem;
+}
+
+.col{
+    padding: 3rem;
+    border-radius: 0%;
+}
+
+
+.navbar-nav{
+    margin: 0 auto;
+}
+
+.nav-link:hover {
+    color: #FDB046;
+}
+
+button{
+    background-color: #4C0A47 !important;
+}
+
+.offcanvas{
+    background-color: #4C0A47 !important;
+}
+
+video{
+  z-index: -100;
+  position: fixed;
+  width: 100% !important;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+    top: 0;
+}
+
+.video{
+      z-index: -100;
+  position: fixed;
+  width: 100% !important;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+    top: 0;
+}
+
+.hole {
+    position: absolute; 
+    width: 47.5rem;
+    height: 27rem;
+    top: 19.1%;
+    left: 25.2%;
+} 
+
+.animation{
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 19.5s;
+    z-index: 10;
+}
+
+.animation2{
+    opacity: 0;
+    animation: fadeIn2 2s forwards;
+    animation-delay: 3s;
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+  0 { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes go {
+  to {
+    z-index: 5; /* end */
+  }
+}
+
+@keyframes fadeIn2 {
+  0 { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes go {
+  to {
+    z-index: 5; /* end */
+  }
+}
+/*MAPS*/
+#mapContainer {
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#mapContainer2 {
+    position: relative;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto; 
+}
+
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 1;
+    box-shadow: 3px 3px 3px;
+    border-radius: 7px;
+}
+
+#map2 {
+   position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 0;
+    box-shadow: 3px 3px 3px;
+    border-radius: 7px;
+}
+
+.marker{
+    background-image: url('../images/map-pin2.svg');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer; 
+    color: #bf72cd;
+}
+/*Styling for Pop ups*/
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #7280CD;
+    border-radius: 5px;
+}
+.mapboxgl-popup-content h2 {
+    color: #000;
+}
+.mapboxgl-popup-content p {
+    color: #000;
+}

@@ -1,0 +1,29 @@
+#mapContainer {
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#mapContainer2 {
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 0;
+}
+
+#map2 {
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 0;
+}
