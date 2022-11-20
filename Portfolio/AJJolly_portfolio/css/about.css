@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imgs/david_retro.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+/*navBar*/
+#navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#navBar a {
+    text-decoration: none;
+    /*font-family: 'Rajdhani', sans-serif;*/
+    font-family: 'Silkscreen', cursive;
+    background-color: #101400;
+    color: #ECE0E7;
+    font-size: 25pt;
+    flex-grow: 1;
+    padding: 25px 50px;
+    text-align: center;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#navBar a:hover {
+    background-color: #ECE0E7;
+    color: #101400;
+}
+
+/*NAVBAR LINKS*/
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*H1 TITLE BOX*/
+.contentTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+    /*background-color: #ED6C68;*/
+    background-color: #46144b;
+    border-radius: 5px;
+    border: 3px solid #101400;
+    overflow-x: hidden;
+}
+
+/*PHOTO AND BIO INFORMATION CONTAINER */
+#about-info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 700px;
+    border-radius: 5px;
+    background-image: url(../imgs/grid1.png);
+    background-position: center;
+    background-color: #FC4454;
+    /*opacity: 80%;*/
+}
+
+/*BIO INFORMATION*/
+#about-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 650px;
+}
+
+#about-text-box a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 17pt;
+  font-family: "Silkscreen", cursive;
+  color: #ece0e7;
+  text-align: center;
+  text-shadow: 2px 2px 2px #101400;
+  transition: 0.5s;
+}
+
+#about-text-box a:hover::after,
+#about-text-box a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+#about-text-box a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #ece0e7;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+/*CONTACT INFO BOX*/
+#contactBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 430px;
+    background-image: url(../imgs/windowBground.png);
+    background-size: cover;
+    border-radius: 10px;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+#contactBox:hover {
+    box-shadow: 25px 25px 3px #ff3379;
+}
+
+/*SPACERS*/
+.spacerVertical {
+    width: 100%;
+    height: 100px;
+}
+
+.spacerLarge {
+    width: 100%;
+    height: 500px;
+}
+
+/*FEATURED IMAGE*/
+.contentImg1 {
+    box-shadow: 5px 5px 5px #101400;
+    border-radius: 10px;
+}
+
+/*BUTTON CLASS*/
+.aboutButton {
+    color: #ECE0E7;
+    background-color: #101400;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 10px 15px;
+    font-size: 35px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.aboutButton:hover {
+    color: #101400;
+    background-color: #ECE0E7;
+    cursor: pointer;
+}
+
+/*TEXT*/
+h1 {
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: 80pt;
+    letter-spacing: 5px;
+    color: #ECE0E7;
+    text-shadow: 5px 5px 5px #101400;
+}
+
+h2 { 
+    font-size: 40pt;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 3px 3px 3px #ECE0E7;
+}
+
+/*WHITE H2 TEXT*/
+.h2White {
+    color: #ECE0E7; 
+    font-size: 40pt;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+p {
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    color: #ECE0E7;
+    font-size: 18pt;
+    width: 700px;
+    text-align: center;
+}
+
+/*BLACK P TEXT*/
+.pBlack {
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    color: #101400;
+    font-size: 17pt;
+    width: 95%;
+    text-shadow: 2px 2px 2px #ECE0E7;
+}
+
+/*SMALL WHITE P TEXT*/
+.p-white-small {
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    color: #ECE0E7;
+    font-size: 15pt;
+    width: 95%;
+}
+
+/*SCROLLING TEXT PARENT*/
+.scrollBar {
+    width: 100%;
+    padding: 25px 0;
+    
+}
+
+/*SCROLLING TEXT*/
+.scrollContent {
+    display: block;
+    width: 100%;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size: 17pt;
+    color: #ECE0E7;
+    transform: translateX(100%);
+    animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+/*H1 HEADER PARENT*/
+.titleWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 90%;
+    height: 150px;
+    border-bottom: 2px solid #ECE0E7;
+}
+
+/*H1 HEADER*/
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    animation: titlemove 1.5s;
+}
+
+/*H1 HEADER ANIMATION*/
+@keyframes titlemove {
+    0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+@media {
+    .title-animation {
+        animation: titlemove 1s 1;
+    }
+}
+
