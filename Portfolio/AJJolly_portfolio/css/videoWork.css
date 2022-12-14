@@ -313,19 +313,3 @@ p {
     height: 150px;
     animation: titlemove 1.5s;
 }
-
-/*HEADER ANIMATION*/
-@keyframes titlemove {
-    0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
-}
-
-@media {
-    .title-animation {
-        animation: titlemove 1s 1;
-    }
-}
