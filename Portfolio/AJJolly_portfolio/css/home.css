@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(../imgs/vaporwaveMountains_starry.png);
+    background-color: #101400;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -304,12 +305,14 @@ h1 {
 h2 { 
     font-size: 40pt;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
 }
 
 .h2White {
     color: #ECE0E7; 
     font-size: 40pt;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
 }
 
 p {
@@ -449,4 +452,100 @@ iconify-icon:hover {
     background-color: #a2253f;
     border-radius: 5px;
     border: 2px solid #101400;
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 600px) {
+    #navBar a {
+        font-size: 15pt;
+    }
+
+    #content {
+        width: 95%;
+        height: 650px;
+    }
+
+    #intro-Section {
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: hidden;
+        height: 500px;
+    }
+
+    .boxContent-head {
+        height: 50%;
+    }
+
+    .contentImg1 {
+        width: 45%;
+    }
+
+    #content2 {
+        width: 95%;
+        height: 2100px;
+    }
+
+    #workDisambig {
+        height: 1500px;
+    }
+
+    #videoBox {
+        width: 90%;
+    }
+
+    #box3 {
+        width: 90%;
+    }
+
+    .boxContent2 {
+        height: 85%;
+        width: 95%;
+    }
+
+    #contactBox {
+        width: 95%;
+    }
+
+    .workButton {
+        font-size: 20pt;
+    }
+
+    .workButton:hover {
+        color: #ECE0E7;
+        background-color: #101400;
+    }
+
+    h1 {
+        font-size: 40pt;
+    }
+
+    p {
+        font-size: 12pt;
+        width: 300px;
+    }
+
+    .pBlack {
+        font-size: 12pt;
+        width: 300px;
+    }
+
+    .scrollContent {
+        font-size: 12pt;
+    }
+
+    .spacerVertical {
+        height: 50px;
+    }
+
+    .spacerLarge {
+        height: 350px;
+    }
+
+    iconify-icon {
+        font-size: 20px;
+    }
+
+    .fa {
+        font-size: 20pt;
+    }
 }
