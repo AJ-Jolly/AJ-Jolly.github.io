@@ -1,93 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Work | Unreal Engine</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Silkscreen&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-    
+    <title>Unreal</title>
     <link rel="stylesheet" href="css/unreal.css">
-    
-    <script src="js/animation.js"></script>
 </head>
 <body>
-    <div id="navBar">
-        <div id="navLinks">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="webWork.html">Web Development</a>
-            <a href="videoWork.html">Video</a>
-            <a href="unreal.html">Unreal</a>
+    <div id="page-grid">
+        <div id="navbar-flexbox">
+            <div id="navbarLink-grid">
+                <div class="dropdown">
+                    <!--set following line text to current page name-->
+                        <div class="dropbtn">&#9776; Unreal </div>
+                        <div class="dropdown-content">
+                            <div id="home-link" class="hvr-hang"><a href="index.html">Home</a></div>
+                            <div id="about-link" class="hvr-hang"><a href="about.html">About</a></div>
+                            <div id="web-link" class="hvr-hang"><a href="webWork.html">Web Development</a></div>
+                            <div id="video-link" class="hvr-hang"><a href="videoWork.html">Video</a></div>
+                            <div id="unreal-link" class="hvr-hang"><a href="unreal.html">Unreal</a></div>
+                        </div>
+                </div>
+            </div>
         </div>
-    </div><!--end navBar-->
-    
-        <div class="spacerVertical"></div>
-        
-    <div class="contentTitle">
-        <div class="titleWrapper">
-            <div class="title">
+        <div class="title-flexbox">
+            <div class="title-grid">
                 <h1>Unreal Engine</h1>
+                <div class="scrollBar">
+                    <span class="scrollContent">
+                        The future is now. The future is now. The future is now. The future is now.
+                    </span>
+                </div>
             </div>
         </div>
-        
-        <div class="scrollBar">
-            <span class="scrollContent">
-                The future is now. The future is now. The future is now. The future is now.
-            </span>
+        <div id="readMore-flexbox">
+            <div id="readMore-grid">
+                <p>|<br>|<br>|<br>|<br>|<br>I'm excited to see what the future holds for game development and virtual reality. That's why I've made Unreal Engine and designing virtual reality experiences one of my newer endeavors.<br>|<br>|<br>|<br>|<br>|<br>&or;<br></p>
+            </div>
         </div>
-        
-        <div class="spacerVertical"></div>
-    </div><!--end content title-->
-    
-    <div class="spacerVertical"></div>
-    
-    <div class="work-content-box-1">
-            <!--<img class="contentImg1" src="imgs/placeholder.png" width="30%">-->
-            <p>|<br>|<br>|<br>|<br>|<br>I'm excited to see what the future holds for game development and virtual reality. That's why I've made Unreal Engine and designing virtual reality experiences one of my newer endeavors.<br>|<br>|<br>|<br>|<br>|<br>&or;<br></p>
-        </div>
-    
-    <div class="spacerLarge"></div>
-    
-    <div class="contentTitle">
-        <div class="spacerVertical"></div>
-        <div class="titleWrapper">
-            <div class="title">
+        <div class="title-flexbox">
+            <div class="title-grid">
                 <h1>Selected Work</h1>
+                <div class="scrollBar">
+                    <span class="scrollContent">
+                        This is not the limit. This is not the limit. This is not the limit. This is not the limit.
+                    </span>
+                </div>
             </div>
         </div>
-        
-        <div class="scrollBar">
-            <span class="scrollContent">
-                This is not the limit. This is not the limit. This is not the limit. This is not the limit.
-            </span>
-        </div>
-    <div class="spacerVertical"></div>        
-    </div><!--end contentTitle-->
-    <div class="spacerVertical"></div>
-    
-    <div class="work-showcase-container">
-        <div class="work-example-box">
-            <span class="h2White">Art Gallery</span>
-            
-            <a class="thumbnail1" href="https://youtu.be/GYGGjXEJffM" target="_blank" rel="noopener noreferrer">
-                <div class="imgWrapper">
-                    <img class="thumbnailImg" src="imgs/thumbnail_vr1.png" width="100%">
+        <div id="selectedWork-flexbox">
+            <div id="selectedWork-grid">
+                <div id="work01-grid" class="small-work-container">
+                    <h2>Art Gallery</h2>
+                    <div class="selectedWork-img">
+                        <a href="https://youtu.be/GYGGjXEJffM" target="_blank" rel="noopener noreferrer">
+                            <img src="../AJJolly_portfolio/imgs/thumbnail_vr1.png"></img>
+                        </a>
+                    </div>
+                    <div class="desc-text">An interactive art gallery featuring the work of Steve Jenkins</div>
                 </div>
-            </a>
-            
-            <span class="p-white-small">An interactive art gallery featuring the work of Steve Jenkins</span>
-        </div>
-        
-        <div class="work-example-box-3">
-            <span class="h2White">Concept: Cabin in the Woods</span>
-            
-            <a class="thumbnail1" href="https://youtu.be/V0tNx6d5TXE" target="_blank" rel="noopener noreferrer">
-                <div class="imgWrapper">
-                    <img class="thumbnailImg" src="imgs/thumbnail_vr2.png" width="100%">
+                <div id="work02-grid" class="small-work-container">
+                    <h3>Concept: Cabin in the Woods</h3>
+                    <div class="selectedWork-img"> 
+                        <a href="https://youtu.be/V0tNx6d5TXE" target="_blank" rel="noopener noreferrer">
+                            <img src="../AJJolly_portfolio/imgs/thumbnail_vr2.png"></img>
+                        </a>
+                    </div>
+                    <div class="desc-text">A virtual reality proof of concept for an interactive experience featuring a cabin and a large forest environment</div>
                 </div>
-            </a>
-            
-            <span class="p-white-small">A virtual reality proof of concept for an interactive experience featuring a cabin and a large forest environment</span>
+            </div>
         </div>
     </div>
 </body>

@@ -1,123 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AJ Jolly | Portfolio</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Silkscreen&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <title>Home</title>
     <link rel="stylesheet" href="css/home.css">
-
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    
-    <script src="js/animation.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 </head>
 <body>
-    <div id="navBar">
-        <div id="navLinks">
-             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="webWork.html">Web Development</a>
-            <a href="videoWork.html">Video</a>
-            <a href="unreal.html">Unreal</a>
+    <div id="page-grid">
+        <div id="navbar-flexbox">
+            <div id="navbarLink-grid">
+                <div class="dropdown">
+                    <!--set following line text to current page name-->
+                        <div class="dropbtn">&#9776; Home </div>
+                        <div class="dropdown-content">
+                            <div id="home-link" class="hvr-hang"><a href="index.html">Home</a></div>
+                            <div id="about-link" class="hvr-hang"><a href="about.html">About</a></div>
+                            <div id="web-link" class="hvr-hang"><a href="webWork.html">Web Development</a></div>
+                            <div id="video-link" class="hvr-hang"><a href="videoWork.html">Video</a></div>
+                            <div id="unreal-link" class="hvr-hang"><a href="unreal.html">Unreal</a></div>
+                        </div>
+                </div>
+            </div>
         </div>
-    </div><!--end navBar-->
-    
-    <div class="spacerVertical"></div>
-    
-    <div class="contentTitle">
-        <div class="spacerVertical"></div>
-        
-        <div class="titleWrapper">
-            <div class="title">
+        <div class="title-flexbox">
+            <div class="title-grid">
                 <h1>Hello! I'm AJ</h1>
+                <div class="scrollBar">
+                    <span class="scrollContent">
+                        Creation starts here. Creation starts here. Creation starts here. Creation starts here.
+                    </span>
+                </div>
             </div>
         </div>
-        
-        <div class="scrollBar">
-            <span class="scrollContent">
-                Creation starts here. Creation starts here. Creation starts here. Creation starts here.
-            </span>
-        </div>
-        
-        <div class="spacerVertical"></div>
-    </div><!-- end contentTitle--> 
-    
-    <div class="spacerVertical"></div>
-    
-    <div id="content">    
-        <div id="intro-Section">
-            <img class="contentImg1" src="imgs/casual-headshot1.jpg" width="23%">
-            
-            <div class="boxContent-head">
-            <p>I'm a multimedia designer based in North Carolina. I specialize in web design, video art, cinematography, video editing, and Unreal Engine.</p>
-            
-             <a href="about.html"><button class="workButton">More About Me</button></a>
-            </div>
-        </div><!--end contentSection1-->
-    </div><!--end content-->
-    
-    <div class="spacerLarge"></div>
-        
-    <div class="contentTitle">
-        <div class="spacerVertical"></div>
-        
-        <div class="titleWrapper">
-            <div class="title">
-                <h1>What I Do</h1>
+        <div id="aboutMe-flexbox">
+            <div id="aboutMe-grid">
+                <div class="grid-bar"></div>
+                <div id="imageText-grid">
+                    <div><img class="pfp" src="../AJJolly_portfolio/imgs/casual-headshot1.jpg" width="60%"></div>
+                    <div class="desc-text">
+                        I'm a multimedia designer based in North Carolina. I specialize in web design, video art, cinematography, video editing, and Unreal Engine. Have a look around!
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="spacerVertical"></div>
-    </div><!--end contentTitle-->
-    
-    <div class="spacerVertical"></div>
-        
-    <div id="content2">
-        <div id="workDisambig">
-            <div class="contentSection1">
-                <div class="boxContent">
-                    <h2>Web Development</h2>
-                    <div class="pBlack">My main specialty is designing and developing websites to showcase your brand our suit whatever need you have. Click below to see some examples.</div>
-                    
-                    <a href="webWork.html"><button class="workButton">See My Work</button></a>
-                </div>
-            </div><!--end webDesignBox-->
-            
-            <div id="videoBox">
-                <div class="boxContent2">
-                    <h2>Video</h2>
-                    <div class="pBlack">I also enjoy video art, scriptwriting, cinematography, lighting, video editing, <br> and sound mixing. I've even co-directed <br> a few student projects.</div>
-                    
-                    <a href="videoWork.html"><button class="workButton">See Work</button></a>
-                </div>
-            </div><!--end videoBox-->
-            
-            <div id="box3">
-                <div class="boxContent2">
-                    <h2>Unreal</h2>
-                    <div class="pBlack">My newest pursuit is Unreal Engine and virtual reality. Here are a few class projects I've done.</div>
-                    
-                    <a href="unreal.html"><button class="workButton">See Work</button></a>
-                </div>
-            </div>
-        </div><!--end workDisambig-->
-        
-        <div class="spacerVertical"></div>
-        
-        <div id="contactBox">
-                <h2>I wanna hear from you</h2>
-                <span class="pBlack">Whatever you're passionate about, I'd love to work with you. Interested? Have questions? Comments? Insights about our ever-expanding universe? Find me here!</span>
-            
-                <div id="icon-row">
-                    <a href="mailto:ajjolly2000@gmail.com"><iconify-icon icon="simple-icons:gmail"></iconify-icon></a>
-                    <a href="https://www.linkedin.com/in/aj-jolly-345029178/" class="fa fa-linkedin"></a>
-                </div>
-            </div>
-    </div><!--end content-->
-    
-    <div class="spacerVertical"></div>
+    </div>
 </body>
 </html>
