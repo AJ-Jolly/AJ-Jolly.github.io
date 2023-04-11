@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imgs/chillwave_bground.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#page-grid {
+    display: grid;
+    width: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    margin: 0px;
+    grid-row-gap: 1rem;
+}
+
+/*N A V B A R*/
+
+#navbar-flexbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#navbarLink-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+#navbarLink-grid {
+    text-decoration: none;
+    font-family: 'Silkscreen', cursive;
+    background-color: #10050b;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.7s;
+    cursor: pointer;
+    overflow-wrap: normal;
+}
+
+@media (max-width: 830px) {
+    #navbarLink-grid {
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 700px) {
+    #navbarLink-grid {
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+}
+
+@media (max-width: 640px) {
+    #navbarLink-grid {
+    font-size: .8rem;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+}
+
+@media (max-width: 500px) {
+    #navbarLink-grid {
+        text-align: left;
+        padding-left: .5rem;
+}
+}
+
+#navbarLink-grid a:hover {
+    background-color: #ECE0E7;
+    color: #101400;
+    text-decoration: none;
+}
+
+#navbarLink-grid a {
+    text-decoration: none;
+    color: #ECE0E7;
+    white-space: nowrap;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+/*DROPDOWN BAR---------------------------------------------------------------------------*/
+
+/* Dropdown Button */
+.dropbtn {
+    display: none;
+    background: none;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    color: #ECE0E7;
+}
+    
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Dropdown Content (Previously Hidden by Default) */
+.dropdown-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    /*position: absolute;*/
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgba(80, 101, 95, 0.486);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(221, 221, 221, 0.505);
+}
+
+@media (max-width: 690px) {
+    .dropdown:hover .dropdown-content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    .dropbtn {
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown {
+        width: 35%;
+    }
+    /*set #[title]-link to current page title*/
+    #unreal-link {
+        display: none;
+    }
+    #navbarLink-grid {
+    font-size: 1rem;
+    }
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: none;
+}
+
+
+/*M A R Q U E E    T E X T --------------------------------------------------------------------*/
+
+/*SCROLLING TEXT PARENT*/
+.scrollBar {
+    width: 100%;
+    padding: 25px 0;
+    overflow: hidden;
+}
+
+/*SCROLLING TEXT*/
+.scrollContent {
+    display: block;
+    width: 100%;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size: 17pt;
+    color: #10050b;
+    /*color: #ECE0E7;*/
+    transform: translateX(100%);
+    animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+/*T I T L E   B O X*/
+
+.title-flexbox {
+    display: flex;
+    flex-direction: row ;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+.title-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    /*background-color: #FFB933;*/
+    background-color: #da268f69;
+    border-radius: 5px;
+    border: 3px solid #a5186a;
+}
+
+h1 {
+    font-family: 'Silkscreen', cursive;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #10050b;
+    /*text-shadow: 2px 2px 2px #ffffff;*/
+    text-shadow: 2px 2px 2px #ff69f5;
+    border-bottom: 2px solid #10050b;
+}
+
+#readMore-flexbox {
+    display: flex;
+    flex-direction: row ;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(../imgs/grid1.png);
+    background-position: center;
+    background-color: #46144b;
+    border: 2px solid #260729d4;
+    border-radius: 10px;
+}
+
+#readMore-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    color: #ECE0E7;
+    text-shadow: 2px 2px 2px #10050b;
+    font-family: 'Silkscreen', cursive;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+}
+
+#selectedWork-flexbox {
+    display: flex;
+    flex-direction: row ;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+#selectedWork-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.small-work-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    background-color: #260729d4;
+    margin: .5rem;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.selectedWork-img > a > img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.selectedWork-img > a > img:hover {
+    -webkit-transform:scale(.85);
+    transform: scale(.85);
+    transition: 0.5s;
+}
+
+h2 {
+    color: #ECE0E7;
+    font-family: 'Silkscreen', cursive;
+    white-space: nowrap;
+    padding: .2rem;
+}
+
+h3 {
+    color: #ECE0E7;
+    font-family: 'Silkscreen', cursive;
+    white-space: nowrap;
+    padding: .2rem;
+}
+
+.desc-text {
+    color: #ECE0E7;
+    font-family: 'Silkscreen', cursive;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+@media (max-width: 830px) {
+    h3 {
+    font-size: .93rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+        }
+    .desc-text {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    h3 {
+    font-size: .8rem;
+    white-space: nowrap;
+    }
+}
+
+@media (max-width: 650px) {
+    h3 {
+    font-size: .8rem;
+    white-space: normal;
+    }
+    h2 {
+        font-size: .8rem;
+        }
+
+        #readMore-grid {
+            font-size: .8rem;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+}
+
+@media (max-width: 550px) {
+    #selectedWork-grid {
+        grid-template-columns: auto;
+    }
+}
+
